@@ -1,7 +1,4 @@
-# Yoga-recommendation
-Full-stack yoga recommendation web app with goal-based yoga flows using Node.js, Express, MongoDB, and JavaScript.
-
-# Yoga Recommendation App
+# Project Overview
 
 A full-stack yoga recommendation web application that suggests yoga poses based on user goals such as weight loss, flexibility, and stress relief.
 
