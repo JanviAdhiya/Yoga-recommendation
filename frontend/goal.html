@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Select Goal</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="goal-container">
+
+<h2>Select Your Yoga Goal</h2>
+
+<div class="goal-grid">
+
+<div class="goal-card" onclick="selectGoal('weightloss')">
+<h3 class="goal-title">🔥 Weight Loss</h3>
+<p>Burn calories and improve metabolism with targeted yoga poses.</p>
+</div>
+
+<div class="goal-card" onclick="selectGoal('flexibility')">
+<h3 class="goal-title">🧘 Flexibility</h3>
+<p>Improve body flexibility and increase range of motion.</p>
+</div>
+
+<div class="goal-card" onclick="selectGoal('strength')">
+<h3 class="goal-title">💪 Strength</h3>
+<p>Build muscle strength and body stability.</p>
+</div>
+
+<div class="goal-card" onclick="selectGoal('fitness')">
+  <h3 class="goal-title">🏃 Fitness</h3>
+  <p>Boost strength, flexibility, and overall physical fitness.</p>
+</div>
+
+<div class="goal-card" onclick="selectGoal('balance')">
+<h3 class="goal-title">⚖ Improve Balance</h3>
+<p>Enhance coordination and body control.</p>
+</div>
+
+<div class="goal-card" onclick="selectGoal('posture')">
+<h3 class="goal-title">🦴 Posture Correction</h3>
+<p>Improve spinal alignment and daily posture.</p>
+</div>
+
+<div class="goal-card" onclick="selectGoal('backpain')">
+<h3 class="goal-title">🩹 Back Pain Relief</h3>
+<p>Reduce back pain and strengthen the spine.</p>
+</div>
+
+<div class="goal-card" onclick="selectGoal('stress')">
+<h3 class="goal-title">🧠 Stress Relief</h3>
+<p>Relax your mind and reduce anxiety.</p>
+</div>
+
+<div class="goal-card" onclick="selectGoal('sleep')">
+<h3 class="goal-title">🌙 Better Sleep</h3>
+<p>Improve sleep quality and relax your body.</p>
+</div>
+
+<div class="goal-card" onclick="selectGoal('mindfulness')">
+<h3 class="goal-title">🌿 Mindfulness</h3>
+<p>Practice awareness and mental calmness.</p>
+</div>
+
+<div class="goal-card" onclick="selectGoal('energy')">
+<h3 class="goal-title">⚡ Energy Boost</h3>
+<p>Increase energy and reduce fatigue.</p>
+</div>
+
+<div class="goal-card" onclick="selectGoal('focus')">
+<h3 class="goal-title">🧠 Focus & Clarity</h3>
+<p>Improve concentration, mental clarity, and reduce distractions.</p>
+</div>
+
+</div>
+
+</div>
+
+    <script>
+
+        function selectGoal(goal) {
+
+            localStorage.setItem("goal", goal);
+
+            window.location.href = "flow.html";
+
+        }
+
+    </script>
+
+</body>
+
+</html>

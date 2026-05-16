@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>YogicFlow</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    
+
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">YogicFlow</div>
+
+        <nav>
+
+            <a href="#home">Home</a>
+            <a href="#benefits">Benefits</a>
+            <a href="#asanas">Asanas</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Signup</a>
+
+        </nav>
+
+    </header>
+
+
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+
+            <span class="tagline">Realize Yourself</span>
+
+            <h1>Flow Into<br />Mindful Living</h1>
+
+            <p>
+                <span style="font-weight: 800;">YogicFlow</span> is a goal-oriented yoga platform that helps you
+                practice yoga with purpose.
+            </p>
+
+            <button onclick="window.location.href='signup.html'">
+                Get Started →
+            </button>
+
+        </div>
+
+        <div class="hero-image">
+            <img src="../landing.svg" class="yoga-animation">
+
+        </div>
+
+    </section>
+
+
+
+    <section class="benefits" id="benefits">
+
+        <h2>Why YogicFlow?</h2>
+
+        <div class="benefit-grid">
+
+            <div class="benefit-card">
+                <h3>Goal-Based Yoga</h3>
+                <p>YogicFlow helps users choose yoga poses based on their personal goals such as fitness, flexibility,
+                    stress relief, or weight management, making the practice more focused and effective.</p>
+            </div>
+
+            <div class="benefit-card">
+                <h3>Mindful & Balanced Living</h3>
+                <p>YogicFlow encourages a balanced lifestyle by combining yoga practices with mindfulness, helping users
+                    reduce stress and improve overall mental well-being.</p>
+            </div>
+
+            <div class="benefit-card">
+                <h3>User-Centric</h3>
+                <p>YogicFlow focuses on the needs of users by providing a simple interface, clear information, and easy
+                    navigation so that anyone can comfortably explore and practice yoga..</p>
+            </div>
+
+            <div class="benefit-card">
+                <h3>Beginner Friendly</h3>
+                <p>The platform is designed for beginners and experienced users alike, providing simple explanations and
+                    easy navigation to help anyone start their yoga journey with confidence.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="asanas" id="asanas">
+
+        <h2>Yoga Asanas</h2>
+
+        <div class="asana-grid" id="asanaContainer"></div>
+
+    </section>
+
+
+    <script src="js/poses.js"></script>
+
+</body>
+
+</html>

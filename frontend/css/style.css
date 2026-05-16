@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Outfit:wght@100..900&display=swap');
+
+:root {
+
+    --primary-green: #6f9f8f;
+    --secondary-green: #9dbfb2;
+    --beige-bg: #f4efe9;
+    --card-bg: #ffffff;
+    --text-dark: #2e2e2e;
+    --text-light: #6a6a6a;
+    --highlight: #e7f1ed;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background: var(--beige-bg);
+    color: var(--text-dark);
+
+}
+
+
+/* NAVBAR */
+
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: var(--beige-bg);
+    align-items: center;
+
+}
+
+.logo {
+    font-family: "Outfit";
+    color: var(--text-dark);
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+
+nav a {
+    font-family: "Manrope";
+    font-size: 1rem;
+    color: var(--text-dark);
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+
+}
+
+.tagline{
+    font-family: "Manrope";
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    background-color: var(--primary-green);
+}
+
+
+/* HERO */
+
+.hero {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5rem 2rem;
+    background: var(--beige-bg);
+
+}
+
+.hero-text {
+    
+    max-width: 50%;
+
+}
+
+.hero-text h1 {
+    font-family: "Outfit";
+    font-size: 48px;
+    margin: 20px 0;
+    line-height: 115%;
+
+}
+
+.hero-text p {
+    font-family: "Manrope";
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: var(--text-light);
+
+}
+
+.hero-text button {
+    font-family: "outfit";
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+    background: var(--primary-green);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+
+}
+
+.hero-image img {
+
+    max-width: 420px;
+
+}
+
+
+/* BENEFITS */
+
+.benefits {
+    background: #faf7f3;
+    padding: 80px 60px;
+
+}
+
+.benefits h2 {
+    font-family: "outfit";
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+
+}
+
+.benefit-grid {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+
+}
+
+.benefit-card {
+    border: 2px solid #e4e4e4;
+    background: var(--card-bg);
+    padding: 35px;
+    border-radius: 14px;
+    min-height: 200px;
+
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+
+    transition: all 0.35s ease;
+}
+
+.benefit-card:hover{
+    transform: translateY(-10px);
+    border-color: var(--primary-green);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.15);
+    background: #f8fdfb;
+    cursor: pointer;
+}
+
+.benefit-card > h3{
+    font-size: 1.35rem ;
+    font-family:"outfit";
+     margin-bottom: 10px;
+}
+
+.benefit-card > p{
+    font-family: "manrope";
+    font-weight: 500;
+    margin-top: 0.3rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+
+/* ASANAS */
+
+.asanas {
+    background-color: #faf7f3;
+    padding: 10px 20px;
+
+}
+
+.asanas h2 {
+    font-family: "IBM Plex Sans";
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+.asana-grid {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 0px auto;
+    scale: 0.99;
+
+}
+
+.pose-content > h3{
+    font-family: "Manrope";
+    font-weight: 800;
+}
+
+.pose-content > p{
+    font-family: "Poppins";
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.pose-card {
+    border: 2px solid #e4e4e4;
+    background: var(--card-bg);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    min-height: 370px;
+
+    transition: all 0.35s ease;
+}
+.pose-card:hover{
+    transform: translateY(-10px);
+    border-color: var(--primary-green);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.15);
+    cursor: pointer;
+}
+
+.pose-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  transition: transform 0.35s ease;
+}
+
+.pose-card:hover img{
+  transform: scale(1.08);
+}
+.pose-card:hover{
+    background: #f8fdfb;
+}
+.finish-button{
+
+    background-color: var(--primary-green);
+    color: white;
+    font-family: "outfit";
+    font-size: 1.75rem;
+    font-weight: 400;
+    padding: 0.75rem 1rem;
+    scale: 0.8;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+
+}
+
+.finish-button:hover{
+
+    background-color: #5b887b;
+
+}
+
+.pose-content {
+
+    padding: 20px;
+
+}
+
+
+/* AUTH */
+
+.auth-container {
+
+    max-width: 400px;
+    margin: 120px auto;
+    padding: 30px;
+    border: 1px solid #e6e0da;
+    border-radius: 10px;
+    text-align: center;
+    background: white;
+
+}
+
+.auth-container input {
+
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin: 0.5rem 0px;
+    color: var(--text-dark);
+    font-family: "IBM plex sans";
+    background-color: #f5f5f5;
+    border: none;
+    font-weight: 500;
+    border-radius: 4px;
+
+}
+
+.auth-container > h2{
+    font-family: "outfit";
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.auth-container button {
+
+    padding: 12px;
+    width: 40%;
+    margin-top: 0.5rem;
+    border: none;
+    background-color: var(--primary-green);
+    color: white;
+    border-radius: 4px;
+    font-family: "IBM plex sans";
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+
+.button-container-1{
+
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+
+}
+
+.button-container-1 > p{
+
+    font-family: "manrope";
+    margin:0.25rem 0px;
+    font-weight: 600;
+    color: gray;
+
+}
+
+.button-container-1 > a{
+
+    text-decoration: none;
+    padding: 12px;
+    width: 40%;
+    margin-top: 0.5rem;
+    border: none;
+    background-color: #f1f1f1;
+    color: black;
+    border-radius: 4px;
+    font-family: "IBM plex sans";
+    font-weight: 500;
+    font-size: 1rem;
+
+}
+.yoga-animation{
+width: 450px;
+animation: floatYoga 4s ease-in-out infinite;
+filter: drop-shadow(0 10px 15px rgba(0,0,0,0.15));
+}
+
+@keyframes floatYoga{
+
+0%{
+transform: translateY(0px);
+}
+
+50%{
+transform: translateY(-15px);
+}
+
+100%{
+transform: translateY(0px);
+}
+
+}
+
+
+/* GOAL PAGE */
+
+.goal-container{
+padding:80px 60px;
+text-align:center;
+}
+
+.goal-container h2{
+font-family:"Outfit";
+font-size:2rem;
+margin-bottom:40px;
+}
+
+.goal-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+max-width:1000px;
+margin:auto;
+}
+
+.goal-card{
+
+background:white;
+
+border:2px solid #e4e4e4;
+
+padding:30px;
+
+border-radius:14px;
+
+transition:all 0.35s ease;
+
+box-shadow:0 6px 15px rgba(0,0,0,0.08);
+
+cursor:pointer;
+
+}
+
+.goal-card h3{
+font-family:"Outfit";
+margin-bottom:10px;
+font-size:1.2rem;
+}
+
+.goal-card p{
+font-family:"Manrope";
+font-size:0.9rem;
+color:var(--text-light);
+}
+
+/* Hover animation */
+
+.goal-card:hover{
+
+transform:translateY(-10px);
+
+border-color:var(--primary-green);
+
+box-shadow:0 18px 35px rgba(0,0,0,0.15);
+
+background:#f8fdfb;
+
+}
